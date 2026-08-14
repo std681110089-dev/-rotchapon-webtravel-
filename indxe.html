@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>China Showcase Deluxe</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Segoe UI,sans-serif;background:#0d0d0d;color:#fff;overflow-x:hidden}
+nav{position:fixed;top:0;width:100%;padding:15px;background:rgba(0,0,0,.8);backdrop-filter:blur(10px);display:flex;justify-content:center;gap:20px;z-index:999}
+nav a{color:#FFD700;text-decoration:none;font-weight:bold}
+.hero{height:100vh;background:url('images/hero.jpg') center/cover fixed;display:flex;justify-content:center;align-items:center;text-align:center;position:relative}
+.hero:before{content:'';position:absolute;inset:0;background:rgba(0,0,0,.5)}
+.hero-content{position:relative;z-index:1;max-width:800px}
+.hero h1{font-size:90px;color:#FFD700;text-shadow:0 0 20px red}
+.hero h2{font-size:40px}
+.hero p{margin-top:20px;line-height:1.8}
+.btn{display:inline-block;margin-top:20px;padding:12px 25px;background:#c40000;color:#fff;text-decoration:none;border-radius:30px}
+section{padding:100px 8%}
+.section-title{text-align:center;color:#FFD700;font-size:45px;margin-bottom:35px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+.card{background:#151515;border-radius:20px;overflow:hidden;box-shadow:0 0 20px rgba(255,0,0,.25)}
+.card img{width:100%;height:240px;object-fit:cover}
+.card h3,.card p{padding:12px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:15px}
+.profile-card{text-align:center;max-width:450px;margin:auto;background:#151515;padding:30px;border-radius:25px}
+.profile-card img{width:250px;height:250px;border-radius:50%;object-fit:cover;border:6px solid #FFD700}
+footer{text-align:center;background:#000;padding:40px}
+.petal{position:fixed;top:-10%;font-size:24px;animation:fall linear infinite;pointer-events:none}
+@keyframes fall{0%{transform:translateY(-100px)}100%{transform:translateY(110vh) rotate(360deg)}}
+</style>
+</head>
+<body>
+<nav>
+<a href="#home">หน้าแรก</a>
+<a href="#places">สถานที่</a>
+<a href="#foods">อาหาร</a>
+<a href="#culture">วัฒนธรรม</a>
+<a href="#gallery">แกลเลอรี</a>
+<a href="#creator">ผู้จัดทำ</a>
+<a href="#teacher">อาจารย์</a>
+</nav>
+
+<section class="hero" id="home">
+<div class="hero-content">
+<h1>CHINA</h1>
+<h2>ประเทศจีน</h2>
+<p>ดินแดนแห่งอารยธรรมอันยิ่งใหญ่กว่า 5,000 ปี เต็มไปด้วยสถานที่ท่องเที่ยว อาหาร และวัฒนธรรมอันทรงคุณค่า</p>
+<a href="#places" class="btn">เริ่มชมเว็บไซต์</a>
+</div>
+</section>
+
+<section id="places">
+<h2 class="section-title">สถานที่ท่องเที่ยว</h2>
+<div class="grid">
+<div class="card"><img src="nn.jpg"><h3>กำแพงเมืองจีน</h3><p>หนึ่งในสิ่งมหัศจรรย์ของโลก</p></div>
+<div class="card"><img src="5.png"><h3>พระราชวังต้องห้าม</h3><p>พระราชวังโบราณใจกลางปักกิ่ง</p></div>
+<div class="card"><img src="oo.jpg"><h3>หอไข่มุกตะวันออก</h3><p>สัญลักษณ์ของเซี่ยงไฮ้</p></div>
+<div class="card"><img src="Zhangjiajie2.png"><h3>จางเจียเจี้ย</h3><p>อุทยานธรรมชาติชื่อดัง</p></div>
+<div class="card"><img src="pi.jpg"><h3>พระราชวังโปตาลา</h3><p>มรดกทางวัฒนธรรมอันล้ำค่า</p></div>
+</div>
+</section>
+
+<section id="foods"><h2 class="section-title">อาหารจีน</h2><div class="grid">
+<div class="card"><img src="pp.jpg"><h3>เป็ดปักกิ่ง</h3><p>เมนูชื่อดังระดับโลก</p></div>
+<div class="card"><img src="i.jpg"><h3>เสี่ยวหลงเปา</h3><p>ซาลาเปาไส้น้ำซุป</p></div>
+<div class="card"><img src="hh.jpg"><h3>หม้อไฟเสฉวน</h3><p>รสชาติเผ็ดร้อน</p></div>
+<div class="card"><img src="qq.jpg"><h3>ติ่มซำ</h3><p>อาหารว่างยอดนิยม</p></div>
+<div class="card"><img src="jj.jpg"><h3>บะหมี่ดึงมือ</h3><p>เส้นสดทำด้วยมือ</p></div>
+</div></section>
+
+<section id="culture"><h2 class="section-title">วัฒนธรรมจีน</h2><div class="grid">
+<div class="card"><img src="mm.jpg"><h3>ตรุษจีน</h3></div>
+<div class="card"><img src="yy.jpg"><h3>เชิดสิงโต</h3></div>
+<div class="card"><img src="ll.jpg"><h3>งิ้วจีน</h3></div>
+<div class="card"><img src="uu.jpg"><h3>กี่เพ้า</h3></div>
+<div class="card"><img src="xx.jpg"><h3>พิธีชงชา</h3></div>
+</div></section>
+
+<section id="gallery">
+<h2 class="section-title">แกลเลอรี</h2>
+<div class="gallery">
+<img src="cc.png"><img src="yy.jpg"><img src="c.png"><img src="mm.jpg"><img src="pi.jpg">
+</div></section>
+
+<section id="creator">
+<h2 class="section-title">ผู้จัดทำ</h2>
+<div class="profile-card">
+<img src="mee.jpg">
+<h3>ชื่อ-นามสกุล:นางสาว รชพร รัตนแสงสุดา</h3>
+<p>ระดับชั้น:ปวช.2/10</p>
+<p>สาขา:เทคโนโลยีสารสนเทศ</p>
+<p>รายวิชา:การสร้างเว็บไซต์</p>
+<p>วิทยาลัย:วิทยาลัยเทคโนโลยีการจัดการเพชรเกษม(PM-TECH) </p>
+</div>
+</section>
+
+<section id="teacher">
+<h2 class="section-title">อาจารย์ผู้สอน</h2>
+<div class="profile-card">
+<img src="so.png">
+<h3>ชื่ออาจารย์ผู้สอน:สุนทร เอี่ยมเกษมสิน</h3>
+<p>รายวิชา:การสร้างเว็บไซต์</p>
+</div>
+</section>
+
+<footer>
+<p>China Showcase Website</p>
+<a href="#home" class="btn">กลับหน้าแรก</a>
+</footer>
+
+<script>
+for(let i=0;i<35;i++){
+let p=document.createElement('div');
+p.className='petal';
+p.innerHTML='🌺';
+p.style.left=Math.random()*100+'vw';
+p.style.animationDuration=(5+Math.random()*10)+'s';
+document.body.appendChild(p);
+}
+</script>
+</body>
+</html>
